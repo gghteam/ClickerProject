@@ -6,14 +6,16 @@ using UnityEngine;
 [Serializable]
 public class Player
 {
-    public long money;
+    public long moneyPerClick = 10;
+    public long moneyLevel = 1;
+    public long money = 0;
     public LunchKing[] lunchKings;
 }
 
 [Serializable]
 public class LunchKing
 {
-    public int level;
-    public int moneyPerSecond;
-    public int upgradeCost;
+    public long level = 1;
+    public long moneyPerSecond = 100;
+    public long upgradeCost = 1540;
 }
